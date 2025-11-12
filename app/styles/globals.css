@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "./theme.css";
+@import "./typography.css";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+@variant dark (&:is(.dark *));
+
+@layer base {
+  body {
+    @apply bg-white text-black;
+    font-family: "Source Sans 3", sans-serif;
+  }
+}
